@@ -12,5 +12,7 @@ The total was $${customerTotal}`
 console.log(customerSummary)
 
 //Create and test calculatecustomerTip function
-function calculatecustomerTip(customerBill,customerTip){return customerBill+customerTip}
-console.log(calculatecustomerTip(100,customerTip))
+let Bill = 100
+function calculatecustomerTip(Bill,tip){return Bill+(300 < Bill < 50) ? (.2*Bill) : (.15*Bill)}
+let  tip = (300 < Bill < 50) ? (.2*Bill) : (.15*Bill) 
+console.log(calculatecustomerTip(Bill,tip))
